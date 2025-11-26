@@ -12,14 +12,14 @@ on:
     paths:
       - 'Dockerfile-CI'
       - '!examples/**'
-    branches: [ "main" ]
+    branches: [ "deploy" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*', 'v*.*.*' ]
   pull_request:
     paths:
       - 'Dockerfile-CI'
       - '!examples/**'
-    branches: [ "main" ]
+    branches: [ "deploy" ]
   workflow_dispatch:
 
 env:
